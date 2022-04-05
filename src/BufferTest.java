@@ -99,4 +99,22 @@ class BufferTest {
         assertEquals(lifoi1.capacity(),5);
         assertEquals(lifoi1.size(),1);
     }
+
+    @Test
+    void random(){
+        for(int i = 0; i < 100000; i++){
+            Lifo randlifo = new Lifo();
+            assertTrue(randlifo.capacity() <= 100 & randlifo.capacity() >= 3);
+        }
+        for(int i=0; i < 10000; i++){
+            Fifo randfifo = new Fifo();
+            assertTrue(randfifo.capacity()<=100&randfifo.capacity()>=3);
+        }
+    }
+
+
+
+
+
+
 }
