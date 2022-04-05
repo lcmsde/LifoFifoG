@@ -91,8 +91,12 @@ class BufferTest {
     }
 
 
-
-
-
-
+    @Test
+    void capacity() {
+       assertEquals(lifoi1.capacity(),5);
+       assertEquals(lifoi1.size(),0);
+       lifoi1.push(5);
+        assertEquals(lifoi1.capacity(),5);
+        assertEquals(lifoi1.size(),1);
+    }
 }
